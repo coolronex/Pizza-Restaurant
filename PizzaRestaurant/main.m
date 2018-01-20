@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Pizza.h"
 #import "Kitchen.h"
+#import "HateAnchoviesManager.h"
 
 
 int main(int argc, const char * argv[])
@@ -19,6 +20,9 @@ int main(int argc, const char * argv[])
         NSLog(@"Please pick your pizza size and toppings:");
         
         Kitchen *kitchen = [Kitchen new];
+        HateAnchoviesManager* manager = [HateAnchoviesManager new];
+
+        
         
         while (TRUE) {
             // Loop forever

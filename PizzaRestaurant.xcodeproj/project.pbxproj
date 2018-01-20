@@ -11,6 +11,7 @@
 		6001EC84197B4EC300F97011 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6001EC83197B4EC300F97011 /* main.m */; };
 		6001EC90197B502F00F97011 /* Kitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6001EC8F197B502F00F97011 /* Kitchen.m */; };
 		97E95F3A20127F1B00117114 /* Pizza.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E95F3920127F1B00117114 /* Pizza.m */; };
+		97E95F3D2012BB0000117114 /* HateAnchoviesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E95F3C2012BB0000117114 /* HateAnchoviesManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		6001EC8F197B502F00F97011 /* Kitchen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kitchen.m; sourceTree = "<group>"; };
 		97E95F3820127F1B00117114 /* Pizza.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pizza.h; sourceTree = "<group>"; };
 		97E95F3920127F1B00117114 /* Pizza.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pizza.m; sourceTree = "<group>"; };
+		97E95F3B2012BB0000117114 /* HateAnchoviesManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HateAnchoviesManager.h; sourceTree = "<group>"; };
+		97E95F3C2012BB0000117114 /* HateAnchoviesManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HateAnchoviesManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 				6001EC83197B4EC300F97011 /* main.m */,
 				6001EC8E197B502F00F97011 /* Kitchen.h */,
 				6001EC8F197B502F00F97011 /* Kitchen.m */,
+				97E95F3B2012BB0000117114 /* HateAnchoviesManager.h */,
+				97E95F3C2012BB0000117114 /* HateAnchoviesManager.m */,
 				97E95F3820127F1B00117114 /* Pizza.h */,
 				97E95F3920127F1B00117114 /* Pizza.m */,
 				6001EC85197B4EC300F97011 /* Supporting Files */,
@@ -148,6 +153,7 @@
 				97E95F3A20127F1B00117114 /* Pizza.m in Sources */,
 				6001EC90197B502F00F97011 /* Kitchen.m in Sources */,
 				6001EC84197B4EC300F97011 /* main.m in Sources */,
+				97E95F3D2012BB0000117114 /* HateAnchoviesManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
