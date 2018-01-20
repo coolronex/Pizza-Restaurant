@@ -28,8 +28,4 @@
 
 - (Pizza *)makePizzaWithSize:(PizzaSize)size toppings:(NSArray *)toppings;
 
-//wirte anything
-//another thing
-
-
 @end

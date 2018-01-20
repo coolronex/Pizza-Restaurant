@@ -22,8 +22,6 @@ int main(int argc, const char * argv[])
         Kitchen *kitchen = [Kitchen new];
         HateAnchoviesManager* manager = [HateAnchoviesManager new];
 
-        
-        
         while (TRUE) {
             // Loop forever
             
