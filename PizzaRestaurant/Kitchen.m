@@ -23,10 +23,7 @@
 
         }
         pizza = [[Pizza alloc] initWithPizzaSize:size toppings:toppings];
-
-        if ([self.delegate respondsToSelector:@selector(kitchenDidMakePizza:)]) {
-            [self.delegate kitchenDidMakePizza:pizza];
-        }
+    
 
     } else {
         pizza = NULL;

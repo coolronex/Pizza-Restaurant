@@ -10,23 +10,42 @@
 #import "Pizza.h"
 #import "Kitchen.h"
 #import "HateAnchoviesManager.h"
-
+#import "Cheery Manager.h"
 
 int main(int argc, const char * argv[])
 {
-
+    
     @autoreleasepool {
         
-        NSLog(@"Please pick your pizza size and toppings:");
-        
         Kitchen *kitchen = [Kitchen new];
-        HateAnchoviesManager* manager = [HateAnchoviesManager new];
-
+        HateAnchoviesManager* hateAnchoviesManager = [HateAnchoviesManager new];
+        Cheery_Manager *cheeryManager = [Cheery_Manager new];
+        
         while (TRUE) {
-            // Loop forever
+            
+            
+            
+            NSLog(@"Input 1 for HateAnchoviesManager. Input 2 for CheeryManager");
+            
+            char str[100];
+            fgets (str, 100, stdin);
+            
+            NSString *inputManagerString = [[NSString alloc] initWithUTF8String:str];
+            inputManagerString = [inputManagerString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+            
+            if ([inputManagerString isEqualToString:@"1"]) {
+                
+                kitchen.delegate = hateAnchoviesManager;
+                
+            } else {
+                
+                kitchen.delegate = cheeryManager;
+                
+            }
+            
+            NSLog(@"Please pick your pizza size and toppings:");
             
             NSLog(@"> ");
-            char str[100];
             fgets (str, 100, stdin);
             
             NSString *inputString = [[NSString alloc] initWithUTF8String:str];
@@ -46,15 +65,15 @@ int main(int argc, const char * argv[])
             //put first word in size
             PizzaSize size = [Pizza convertStringToEnum:commandWords[0]];
             
-            NSLog(@"Pizza size: %ld",size);
+            Pizza *pizza = [kitchen makePizzaWithSize:size toppings:toppings];
             
-            // And then send some message to the kitchen...
-            Pizza *pizzaMadeByKitchen = [kitchen makePizzaWithSize:size toppings:toppings];
-            
-            NSLog(@"Pizza size: %@; Pizza toppings: %@", [pizzaMadeByKitchen showPizzaSizeAsString] , toppings);
+            if (pizza) {
+                NSLog(@"Pizza size: %@, Pizza toppings: %@", [pizza showPizzaSizeAsString], pizza.toppings );
+            } else {
+                NSLog(@"No pizza");
+            }
         }
-
+        return 0;
     }
-    return 0;
 }
 

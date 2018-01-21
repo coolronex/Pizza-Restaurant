@@ -16,10 +16,6 @@
 - (BOOL) kitchen: (Kitchen *)kitchen shouldMakePizzaOfSize:(PizzaSize)size andToppings:(NSArray *)toppings;
 - (BOOL) kitchenShouldUpgradeOrder: (Kitchen *)kitchen;
 
-@optional
-
-- (BOOL)kitchenDidMakePizza:(Pizza *)pizza;
-
 @end
 
 @interface Kitchen : NSObject

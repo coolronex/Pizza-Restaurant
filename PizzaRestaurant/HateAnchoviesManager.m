@@ -18,9 +18,11 @@
     for (NSString* topping in toppings) {
         BOOL isAnchovies = [topping isEqualToString: @"anchovies"];
         if (isAnchovies) {
+            NSLog(@"Manager: Not making pizza because there's anchovies");
             return NO;
         }
     }
+    
     return YES;
 }
 
